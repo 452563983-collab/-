@@ -2,10 +2,12 @@
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="theme-color" content="#020617">
+    <meta name="description" content="一个专业的集换式卡牌投资组合管理器">
+    <link rel="manifest" href="./manifest.json">
     <title>卡牌交易助手</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -28,6 +30,9 @@
       body {
         overscroll-behavior-y: none;
         background-color: #020617; /* match slate-950 */
+        /* Handle safe area for iPhone X+ */
+        padding-top: env(safe-area-inset-top);
+        padding-bottom: env(safe-area-inset-bottom);
       }
     </style>
   <script type="importmap">
